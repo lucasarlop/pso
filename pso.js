@@ -176,7 +176,6 @@ function pso() {
     for (var j=0; j<P; j++) {
       particles[j].updateSpeed(bestParticle, COG_COMP, SOC_COMP, SPD_RESTRICTIONS);
       particles[j].updatePosition(POS_RESTRICTIONS);
-
       // console.log("Particle " + j + ": " + particles[j].fitness + " [" + particles[j].position[0] + ", " + particles[j].position[1] + "]");
     }
 
